@@ -39,4 +39,4 @@ Questions:
 
 1. I ran the POST curl for the password and as it was processing, also ran the stats curl command. The Stats came back as reading 4 total requests, but counting the request that was in process for the POST, this should have read 5. Do the stats counts get counted only upon completion of the request, or when the request is triggered?
 
-2. Is an auth token not needed as part of the payload for the password POST request? Or is this intented to be unauthenticated?
+2. Is an auth token not needed as part of the payload for the password POST request? Or is this intented to be unauthenticated? Absent clarification from Dev, I would enter this issue as a critical bug, as my assumption is that any requests that are POST or PATCH should require an authentication token.
